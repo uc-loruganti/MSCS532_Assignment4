@@ -1,3 +1,6 @@
+import argparse
+
+# To heapify a subtree rooted with node index which is an index in arr[]. length is size of heap
 def heapify(arr, length, index):
     largest = index 
     # Find the largest among root, left child and right child
@@ -42,7 +45,11 @@ def heap_sort(arr):
 
 if __name__ == "__main__":
     print("Heap Sort Implementation")
-    input_array = [12, 11, 13, 5, 6, 7]
+    parser = argparse.ArgumentParser(description="Heap Sort Algorithm")
+    parser.add_argument("--elements", nargs="*", type=int, help="List of integers to sort")
+    args = parser.parse_args()
+    input_array = args.elements
+    # input_array = [12, 11, 13, 5, 6, 7]
     print("Original array:", input_array)
     sorted_array = heap_sort(input_array)
     print("Sorted array:", sorted_array)

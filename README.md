@@ -8,7 +8,7 @@ Priority Queue analysis: [priorityqueue-report.md](priorityqueue-report.md)
 
 ## Heap Sort
 
-The `heap-sort.py` script implements the Heap Sort algorithm. You can run it from the command line:
+The [heap-sort.py](heap-sort.py) script implements the Heap Sort algorithm. You can run it from the command line:
 
 ### Usage
 ```bash
@@ -25,7 +25,7 @@ Sorted array: [5, 6, 7, 12, 12, 13]
 
 ## Priority Queue
 
-The `priority-queue.py` script implements a Priority Queue using a min-heap. The `Task.py` script defines a `Task` class that is used in the priority queue. You can run the priority queue script from the command line:
+The [priority-queue.py](priority-queue.py) script implements a Priority Queue using a min-heap. The `Task.py` script defines a `Task` class that is used in the priority queue. You can run the priority queue script from the command line:
 
 ```bash
 python priority-queue.py
